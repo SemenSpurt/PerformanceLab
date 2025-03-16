@@ -2,9 +2,6 @@
 
 import sys
 
-from numpy import array
-from numpy.linalg import norm
-
 
 def locate_point(center: list, radius: float, point: list) -> int:
     point_to_center_dist = sum(abs(a - b) for a, b in zip(center, point))
