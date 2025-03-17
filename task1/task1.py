@@ -4,8 +4,8 @@ import sys
 
 
 def path_calc(n: int , m: int ) -> int:
-    if n < 1:
-        raise ValueError('First argument mast be a positive integer')
+    if n < 1 or m < 1:
+        raise ValueError('Arguments must be positive integers')
 
     else:
         seq = list(range(1, n + 1))
